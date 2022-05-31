@@ -1,0 +1,6 @@
+#!/bin/bash
+xhost +
+sudo docker run -d --name dingtalk -v /tmp/.X11-unix:/tmp/.X11-unix  -e DISPLAY=unix$DISPLAY -v /usr/share/zoneinfo/Asia/Shanghai:/etc/localtime -v /home/fitme/:/root -e GDK_SCALE -e GDK_DPI_SCALE dingtalk:1.3.0.20214
+if [ $1 == stop ];then
+	sudo docker  rm dingtalk -f
+fi

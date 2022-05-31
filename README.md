@@ -10,3 +10,6 @@
 - 基于ubuntu:18.04
 - 安装搜狗输入法
 - 本地构建，避免拉取镜像慢
+## 构建dingtalk命令方便启动
+- 脚本dingtalk
+- mv dingtalk /usr/local/bin/
